@@ -1,0 +1,22 @@
+
+<?php
+
+
+if($_POST["message"]) {
+
+
+mail("your@email.address", "Here is the subject line",
+
+
+$_POST["insert your message here"]. "From: an@email.address");
+
+
+}
+
+
+?>
+
+
+<!--
+<?php if($_POST["message"]) { mail("michelle.stallings@cerrocoso.edu", "New message from" + document.getElementById('name'), $_POST[document.getElementbyId('comments')]. "From: " + document.getElementById('email')); } ?>
+-->

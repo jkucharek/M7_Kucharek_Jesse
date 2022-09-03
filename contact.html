@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Module 6 Practical</title>
+		<meta name="description" content="Module 6 practical example">
+		<link rel="stylesheet" href="styles.css">
+
+	</head>
+
+	<body id="contact">
+		<div id="content">
+			<div id="title" class="layout"><span>SMITH PHOTOGRAPHY<span></div>
+			<div id="nav" class="layout"><span>
+				<a href="index.html">Home</a>
+				&emsp;
+				<a href="about.html">About</a>
+				&emsp;
+				<a href="contact.html">Contact</a>
+			</span></div>
+			<div id="contactBody" class="layout" method="post">
+				<form id="contactForm">
+					<p>Contact Us</p>
+					<label for="contactType">What can we help you with?</label>
+					<br/>
+					<select id="contactType" name="contactType" required>
+						<option disabled selected> -- select topic --</option>
+						<option value="Service">Service Request</option>
+						<option value="Reschedule">Reschedule</option>
+						<option value="Cancelation">Cancellation</option>
+						<option value="Feedback">Feedback</option>
+						<option value="Inquiry">General Inquiry</option>
+					</select>
+					<br/>
+					<label for="name">Name</label>
+					<br/>
+					<input type="text" id="name" name="name" maxlength="25" required/>
+					<label for="email">Email</label>
+					<br/>
+					<input type="email" id="email" name="email"  placeholder="name@example.com" required/>
+					<label for="phone">Phone</label>
+					<br/>
+					<input type="tel" id="phonel" name="phone" maxlength="10" placeholder="(000) 000-0000" pattern="[0-9]{10}" require/>
+					<label for="comments">Comments</label>
+					<br/>
+					<textarea id="comments" name="comments" placeholder="Write something..." required></textarea>
+					<input type="submit" id="submit" name="submit" value="Submit" action="contactForm.php"/>
+				</form>
+			</div>
+			<div id="footer" class="layout"><span>
+				|
+				&emsp;
+				1234 Main St. Nowhere, CA 56780
+				&emsp;
+				||
+				&emsp;
+				(555)123-4567 | lorem@ipsum.com
+				&emsp;
+				||
+				&emsp;
+				This is an example site for educational purposes only.
+				&emsp;
+				|
+			</span></div>
+		</div>
+	</body>
+</html>
+
