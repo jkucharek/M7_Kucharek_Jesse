@@ -12,7 +12,7 @@
 
 	<body id="contact">
 		<div id="content">
-			<div id="title" class="layout"><span>SMITH PHOTOGRAPHY<span></div>
+			<div id="title" class="layout"><span>SMITH PHOTOGRAPHY</span></div>
 			<div id="nav" class="layout"><span>
 				<a href="index.html">Home</a>
 				&emsp;
@@ -20,13 +20,13 @@
 				&emsp;
 				<a href="contact.html">Contact</a>
 			</span></div>
-			<div id="contactBody" class="layout" method="post">
-				<form id="contactForm">
+			<div id="contactBody" class="layout">
+				<form id="contactForm" action="contactForm.php" method="post" enctype="text/plain">
 					<p>Contact Us</p>
 					<label for="contactType">What can we help you with?</label>
 					<br/>
-					<select id="contactType" name="contactType" required>
-						<option disabled selected> -- select topic --</option>
+					<select id="contactType" name="contactType" size="1" required>
+						<option value="" disabled selected>-- select topic --</option>
 						<option value="Service">Service Request</option>
 						<option value="Reschedule">Reschedule</option>
 						<option value="Cancelation">Cancellation</option>
@@ -42,11 +42,11 @@
 					<input type="email" id="email" name="email"  placeholder="name@example.com" required/>
 					<label for="phone">Phone</label>
 					<br/>
-					<input type="tel" id="phonel" name="phone" maxlength="10" placeholder="(000) 000-0000" pattern="[0-9]{10}" require/>
+					<input type="tel" id="phone" name="phone" maxlength="10" placeholder="(000) 000-0000" pattern="[0-9]{10}" required/>
 					<label for="comments">Comments</label>
 					<br/>
 					<textarea id="comments" name="comments" placeholder="Write something..." required></textarea>
-					<input type="submit" id="submit" name="submit" value="Submit" action="contactForm.php"/>
+					<input type="submit" id="submit" name="submit" value="Submit"/>
 				</form>
 			</div>
 			<div id="footer" class="layout"><span>
